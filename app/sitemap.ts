@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 
-const paths = ['', 'developer-tools', 'converters', 'developer-tools/json-formatter', 'developer-tools/jwt-decoder', 'developer-tools/regex-tester','developer-tools/text-diff-checker','developer-tools/cron-job-parser', 'converters/timestamp-converter', 'converters/base64-converter', 'guides/how-to-format-json', 'guides/jwt-vs-session', 'guides/regex-cheat-sheet', 'about', 'contact', 'privacy', 'terms'];
+const paths = ['', 'developer-tools', 'converters', 'guides', 'developer-tools/json-formatter', 'developer-tools/jwt-decoder', 'developer-tools/regex-tester','developer-tools/text-diff-checker','developer-tools/cron-job-parser', 'converters/timestamp-converter', 'converters/base64-converter', 'guides/how-to-format-json', 'guides/jwt-vs-session', 'guides/regex-cheat-sheet', 'about', 'contact', 'privacy', 'terms'];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return paths.map((path, index) => {
@@ -13,5 +13,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 }
+
 
 
