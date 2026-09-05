@@ -1,4 +1,4 @@
-import { JwtTool } from "@/components/tool-clients";
+import { JwtTool } from "@/components/jwt-tool";
 import { ToolLayout, toolMetadata } from "@/components/tool-layout";
 export const metadata = toolMetadata(
   "JWT Decoder Learn more — Learn more Header Learn more Payload",
@@ -32,4 +32,5 @@ export default function Page() {
     </ToolLayout>
   );
 }
+
 
