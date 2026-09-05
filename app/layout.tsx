@@ -5,27 +5,26 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     "https://devkit-thai-tools.tasty-sugar-2900.chatgpt.site",
   ),
-  title: { default: "DevKit — Learn more", template: "%s | DevKit" },
-  description: "Learn more Learn more Learn more",
+  title: { default: "DevKit — Fast private developer tools", template: "%s | DevKit" },
+  description: "Fast, private browser-based developer tools for JSON, JWT, regex, timestamps, Base64, diffs, and cron schedules.",
   keywords: [
     "developer tools",
     "JSON formatter",
     "JWT decoder",
     "regex tester",
-    "Learn more",
+    "Unix timestamp converter", "Base64 encoder decoder", "text diff checker", "cron parser",
   ],
   openGraph: {
     type: "website",
-    locale: "th_TH",
+    locale: "en_US",
     siteName: "DevKit",
-    title: "DevKit — Learn more",
-    description:
-      "Learn moreSmall coding tasks Learn moredone faster without sending data anywhere",
+    title: "DevKit — Fast private developer tools",
+    description: "Useful developer utilities that run locally in your browser.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "DevKit — Learn more",
-    description: "Learn more",
+    title: "DevKit — Fast private developer tools",
+    description: "Useful developer utilities that run locally in your browser.",
   },
   robots: { index: true, follow: true },
 };

@@ -1,4 +1,4 @@
-import { JsonTool } from "@/components/tool-clients";
+import { JsonTool } from "@/components/json-tool";
 import { ToolLayout, toolMetadata } from "@/components/tool-layout";
 export const metadata = toolMetadata(
   "JSON Formatter Learn more — Learn more JSON",
@@ -38,4 +38,5 @@ export default function Page() {
     </ToolLayout>
   );
 }
+
 

@@ -1,0 +1,15 @@
+# DevKit
+
+DevKit is a free collection of private, browser-only developer tools.
+
+## Tools
+- JSON Formatter: format, validate, and minify JSON.
+- JWT Decoder: inspect JWT headers and payloads locally.
+- Regex Tester: test regular expressions and capture groups.
+- Timestamp Converter: convert Unix timestamps and dates.
+- Base64 Converter: encode and decode Base64 text.
+- Text Diff Checker: compare two text files or blocks.
+- Cron Job Parser: explain cron expressions.
+
+All processing happens locally in the user's browser.
+

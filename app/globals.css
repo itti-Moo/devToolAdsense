@@ -251,3 +251,5 @@ a.tool-card:hover {
   text-underline-offset: 3px;
 }
 
+.dark body{background:#0f172a;color:#e2e8f0}.dark .tool-card,.dark .workspace,.dark input,.dark textarea{background:#1e293b;color:#e2e8f0}.dark .border-slate-200{border-color:#334155}
+
