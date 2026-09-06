@@ -1,36 +1,4 @@
-import { JwtTool } from "@/components/jwt-tool";
-import { ToolLayout, toolMetadata } from "@/components/tool-layout";
-export const metadata = toolMetadata(
-  "JWT Decoder Learn more — Learn more Header Learn more Payload",
-  "Learn more JWT token Learn more browser Learn more Header Learn more Payload Learn more token Learn more server",
-);
-export default function Page() {
-  return (
-    <ToolLayout
-      title="JWT Decoder"
-      eyebrow="DEVELOPER TOOLS / SECURITY"
-      description="Learn more Header Learn more Payload Learn more JSON Web Token Learn more Learn more token Learn more"
-      related={[
-        { href: "/guides/jwt-vs-session/", label: "JWT vs Session" },
-        { href: "/converters/base64-converter/", label: "Base64 Converter" },
-      ]}
-    >
-      <JwtTool />
-      <>
-        <h2>Learn more JWT Learn more</h2>
-        <p>
-          JWT Learn more Header, Payload Learn more Signature
-          Learn more Base64URL
-          Learn more
-        </p>
-        <h2>Learn more</h2>
-        <p>
-          Learn moreRuns locally Learn more access token Learn more
-          Learn more secret Learn more Payload
-        </p>
-      </>
-    </ToolLayout>
-  );
-}
-
+import {JwtTool} from '@/components/jwt-tool';import {ToolLayout,toolMetadata} from '@/components/tool-layout';
+export const metadata=toolMetadata('JWT Decoder and Verifier | DevKit','Decode JWT headers and payloads locally, inspect claims, and verify supported signatures.');
+export default function Page(){return <ToolLayout title="JWT Decoder" eyebrow="DEVELOPER TOOLS / SECURITY" description="Inspect JWT headers, payload claims, expiration times, and supported signatures without sending tokens to a server." related={[{href:'/guides/jwt-vs-session/',label:'JWT vs Session'},{href:'/converters/base64-converter/',label:'Base64 Converter'}]}><JwtTool/><><h2>Understand a JSON Web Token</h2><p>A JWT contains a header, payload, and signature encoded with Base64URL. Decoding reveals claims; verification confirms whether the signature matches a key.</p><h2>Check important claims</h2><p>Review expiration, not-before, issued-at, issuer, audience, and subject values before trusting a token.</p><h2>Security reminder</h2><p>Never paste production secrets or sensitive tokens into a shared computer. This tool is intended for local development and debugging.</p></></ToolLayout>}
 
