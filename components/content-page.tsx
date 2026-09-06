@@ -2,3 +2,4 @@
 export const contentMetadata=(title:string,description:string)=>({title,description});
 export function InfoPage({title,description,children}:{title:string;description:string;children:React.ReactNode}){return <div><SiteHeader/><main className="mx-auto max-w-3xl px-5 py-14"><h1 className="text-4xl font-bold">{title}</h1><p className="mt-4 text-lg text-slate-600">{description}</p><div className="prose-copy mt-10">{children}</div></main><SiteFooter/></div>}
 
+
