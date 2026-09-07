@@ -1,9 +1,2 @@
-import type { MetadataRoute } from "next";
-export default function robots(): MetadataRoute.Robots {
-  return {
-    rules: { userAgent: "*", allow: "/" },
-    sitemap:
-      "https://devkit-thai-tools.tasty-sugar-2900.chatgpt.site/sitemap.xml",
-  };
-}
+import type {MetadataRoute} from 'next';const siteUrl=process.env.NEXT_PUBLIC_SITE_URL||'https://adsense-alpha-sand.vercel.app';export default function robots():MetadataRoute.Robots{return{rules:{userAgent:'*',allow:'/'},sitemap:`${siteUrl}/sitemap.xml`}}
 
