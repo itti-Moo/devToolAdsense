@@ -1,43 +1,5 @@
-import type { Metadata } from "next";
-import "./globals.css";
-
-export const metadata: Metadata = {
-  metadataBase: new URL(
-    "https://devkit-thai-tools.tasty-sugar-2900.chatgpt.site",
-  ),
-  title: { default: "DevKit — Fast private developer tools", template: "%s | DevKit" },
-  description: "Fast, private browser-based developer tools for JSON, JWT, regex, timestamps, Base64, diffs, and cron schedules.",
-  keywords: [
-    "developer tools",
-    "JSON formatter",
-    "JWT decoder",
-    "regex tester",
-    "Unix timestamp converter", "Base64 encoder decoder", "text diff checker", "cron parser",
-  ],
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    siteName: "DevKit",
-    title: "DevKit — Fast private developer tools",
-    description: "Useful developer utilities that run locally in your browser.",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "DevKit — Fast private developer tools",
-    description: "Useful developer utilities that run locally in your browser.",
-  },
-  robots: { index: true, follow: true },
-};
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
-  );
-}
+import type {Metadata} from 'next';import './globals.css';import {Analytics} from '@/components/analytics';
+const siteUrl=process.env.NEXT_PUBLIC_SITE_URL||'https://adsense-alpha-sand.vercel.app';
+export const metadata:Metadata={metadataBase:new URL(siteUrl),title:{default:'DevKit — Fast private developer tools',template:'%s | DevKit'},description:'Fast, private browser-based developer tools for JSON, JWT, regex, timestamps, Base64, diffs, cron schedules, QR codes, and barcodes.',keywords:['developer tools','JSON formatter','JWT decoder','regex tester','Unix timestamp converter','Base64 encoder decoder','text diff checker','cron parser','QR code generator','barcode generator'],alternates:{canonical:'/'},openGraph:{type:'website',locale:'en_US',siteName:'DevKit',title:'DevKit — Fast private developer tools',description:'Useful developer utilities that run locally in your browser.',url:siteUrl},twitter:{card:'summary_large_image',title:'DevKit — Fast private developer tools',description:'Useful developer utilities that run locally in your browser.'},robots:{index:true,follow:true,googleBot:{index:true,follow:true,maxSnippet:-1,maxImagePreview:'large',maxVideoPreview:-1}}};
+export default function RootLayout({children}:{children:React.ReactNode}){const schema={'@context':'https://schema.org','@type':'WebSite',name:'DevKit',url:siteUrl,description:'Private browser-based developer tools'};return <html lang="en"><body>{children}<Analytics/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}}/></body></html>}
 
